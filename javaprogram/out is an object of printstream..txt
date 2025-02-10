@@ -1,0 +1,26 @@
+* "out" is an object of printstream.
+*  "print" is a method of printstream.
+1. program to print age of student?
+ans: class StudentAgeEx{
+     public static void main(String[]args)
+     {
+      int studentAge=20;
+       System.out.println(studentAge);
+      }
+      }
+java.lang is a default package
+java.util is the package where scanner is present.
+
+
+2.methods:
+* method definition syntax:
+accessspecifier returtype nameofmethod(argumentlist){
+statements;
+}
+we use static main
+and returntype is datatypes----void
+
+* method declaration syntax
+methodname(argumentlist);
+
+

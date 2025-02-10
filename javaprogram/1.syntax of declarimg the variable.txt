@@ -1,0 +1,11 @@
+1.syntax of declarimg the variable
+     datatype variablename=value;
+  ex: float marks=34.56f;
+2.variable naming convention
+  keyword not allowed
+  special symbols are not allowed except $,_
+  lowercamel case
+  first name
+  nouns
+  
+

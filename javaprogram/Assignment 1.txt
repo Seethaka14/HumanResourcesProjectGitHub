@@ -1,0 +1,281 @@
+1.public class FamilyDetails {
+
+    public static void main(String[] args) {
+        // Mother's details
+        String motherName = "Manjula";
+        int motherAge = 40;
+        double motherSalary = 70000.00;
+        String motherPhoneNumber = "7893386596";
+        String motherCity = "B.Kothakota";
+        String motherState = "Andhra Pradesh";
+        String motherCountry = "INDIA";
+
+        // Father's details
+        String fatherName = "Sankarappa";
+        int fatherAge = 50;
+        double fatherSalary = 85000.00;
+        String fatherPhoneNumber = "7259624657";
+        String fatherCity = "Bengaluru";
+        String fatherState = "Karnataka";
+        String fatherCountry = "INDIA";
+
+        // Print Mother's details
+        System.out.println("Mother's Details:");
+        System.out.println("Name: " + motherName);
+        System.out.println("Age: " + motherAge);
+        System.out.println("Salary:" + motherSalary);
+        System.out.println("Phone Number: " + motherPhoneNumber);
+        System.out.println("Address: " + motherCity + ", " + motherState + ", " + motherCountry);
+        System.out.println();
+
+        // Print Father's details
+        System.out.println("Father's Details:");
+        System.out.println("Name: " + fatherName);
+        System.out.println("Age: " + fatherAge);
+        System.out.println("Salary: $" + fatherSalary);
+        System.out.println("Phone Number: " + fatherPhoneNumber);
+        System.out.println("Address: " + fatherCity + ", " + fatherState + ", " + fatherCountry);
+    }
+}
+
+
+2.class PrintMessage {
+    public static void main(String[] args) {
+        // Print the message in the given format
+        System.out.println("                      hello");
+        System.out.println("            welcome     to");
+        System.out.println("    edubridge       online         classes");
+    }
+}
+
+
+3.In Java, the default package is an unnamed package that is automatically used when no package declaration is    specified at the top of a Java source file.
+
+4.The Scanner class in Java is part of the java.util package. It is used to read input from various sources, such as the keyboard, files, or strings, and parse it into primitive data types or strings.
+
+5.Methods to Read Input:
+ *next()
+
+Reads the next token (a single word) as a String.
+
+Tokens are separated by whitespace (spaces, tabs, or newlines).
+
+* nextLine()
+
+Reads the entire line of input as a String, including spaces, until a newline character (\n) is encountered.
+
+* nextInt()
+
+Reads the next token as an int.
+
+* nextDouble()
+
+Reads the next token as a double.
+
+* nextFloat()
+
+Reads the next token as a float.
+
+* nextLong()
+
+Reads the next token as a long.
+
+* nextShort()
+
+Reads the next token as a short.
+
+* nextByte()
+
+Reads the next token as a byte.
+
+* nextBoolean()
+
+Reads the next token as a boolean (true or false).
+6. integer ---byte-1byte,
+              short--2bytes, 
+              int--4bytes,
+              long--8bytes
+   Ex:int age = 25;  // Declare and initialize an integer variable
+      short height = 160;  // Declare and initialize a short integer
+      long population = 7000000000;  // Declare and initialize a long integer
+      
+   decimal---float --4 bytes
+             double ---8bytes
+  Ex:float temperature = 36.6f;  // Declare and initialize a float variable
+     double price = 99.99;  // Declare and initialize a double variable
+
+   character ----char 2 bytes
+   Ex:char grade = 'A';  // Declare and initialize a char variable
+      
+   boolean ---boolean 1bit true or false 
+   Ex:bool isAdult = true;  // Declare and initialize a boolean variable
+
+
+7.class FriendNames {
+  static void displayFriend1() {
+  System.out.println("Friend 1: silpa");
+  }
+  static void displayFriend2() {
+  System.out.println("Friend 2: pavani");
+  }
+  static void displayFriend3() {
+  System.out.println("Friend 3: jyoshna");
+  }
+  public static void main(String[] args) {
+        displayFriend1();
+        displayFriend2();
+        displayFriend3();
+    }
+}
+
+8.class AddNumbers {
+  static int add(int num1, int num2) {
+  return num1 + num2;  
+  }
+  public static void main(String[] args) {
+  int number1 = 10;  
+  int number2 = 20;  
+  int sum = add(number1,number2);
+  System.out.println(sum);
+  }
+}
+
+9. The public static void main(String[] args) method is the entry point for any Java application. When you run a Java program, the Java Virtual Machine (JVM) looks for this method to start executing the program. 
+ *public:
+  Access Modifier: The public keyword is an access modifier that indicates the method can be accessed from anywhere. Since the JVM needs to call this method to start the program, it must be publicly accessible.
+ * static:
+Static Method: The static keyword means that the method belongs to the class rather than any specific instance of the class. This allows the JVM to call the method without creating an instance of the class. Since the JVM starts the program before any objects are created, the main method must be static.
+ *void:
+Return Type: The void keyword indicates that the method does not return any value. The main method is designed to start the program and does not need to return anything to the JVM.
+ *main:
+Method Name: main is the name of the method. This is a special name that the JVM recognizes as the starting point of the program. The method signature must exactly match public static void main(String[] args) for the JVM to identify it as the entry point.
+
+* (String[] args):
+  Parameters: The main method takes a single parameter, which is an array of String objects. This array holds the command-line arguments passed to the program when it is executed. Each element in the array corresponds to a command-line argument.
+String[]: This is the type of the parameter, indicating an array of strings.
+
+args: This is the name of the parameter.
+
+10.import java.util.*;
+class DaysNames{
+static String Names(String days){
+return days;
+}
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+String res1=Names(sc.next());
+System.out.println("My first day name is: "+res1);
+String res2=Names(sc.next());
+System.out.println("My second day name is: "+res2);
+String res3=Names(sc.next());
+System.out.println("My third day name is: "+res3);
+String res4=Names(sc.next());
+System.out.println("My third day name is: "+res4);
+String res5=Names(sc.next());
+System.out.println("My third day name is: "+res5);
+String res6=Names(sc.next());
+System.out.println("My third day name is: "+res6);
+String res7=Names(sc.next());
+System.out.println("My third day name is: "+res7);
+}
+}
+11.* class name should be filename
+   *File name should be unique
+   *File name should not a keyword
+   *public class name should be the filename 
+   *If all class have default access specifier then any class can be the filename
+   *class which is having main should be filename.
+12.classname should be noun 
+   classname shouldn't be keyword
+   classname shouldn't start from numbers, special characters
+   Only "$", "_" are allowed 
+   classname shoulb be in uppercamel case.
+13. Method name should start with characters and $ and _ 
+    Method name should not be a keyword
+    It should start with digits
+    Method name should be unique
+    It follows lowercamelcase.
+14.Variable should not be a keyword 
+   special symbols are not allowed except $ and _
+   It follows lowercamel case 
+   It should firstName
+   It must be a noun.
+15.The main entry point of a Java program is the public static void main(String[] args) method. This is the method that the Java Virtual Machine (JVM) looks for when you run a Java program. It is the starting point of execution for any Java application.
+
+16.The Java Virtual Machine (JVM) is responsible for invoking the main method of a Java program. When you run a Java application, the JVM takes control and looks for the main method to start the execution of the program.
+
+17.The main method in Java is static because:
+
+No Object Exists at Start: When the program starts, no objects are created yet. The JVM needs a way to call main without needing an object.
+
+Static Means No Object Needed: A static method belongs to the class itself, so the JVM can call main directly using the class name.
+
+Standard Entry Point: It provides a consistent way for the JVM to start any Java program.
+
+18.components of java program are?
+   1.classes
+   2.variables
+   3.objects
+   4.methods
+   5.packages
+   6.keywords
+   7.statements
+   8.comments
+   9.Libraries (APIs)
+   10.access specifiers or modifiers
+19.what is jvm,jre,jdk?
+   1. JVM (Java Virtual Machine):
+      The JVM is a virtual machine that runs Java bytecode.It provides a platform-independent way to execute Java programs.
+   2.JRE (Java Runtime Environment):
+      The JRE is a package that provides the environment to run Java programs.This include JVM,Libraries.
+      It is used by end-users to run Java applications.
+   3.JDK (Java Development Kit):
+      The JDK is a package for developing Java applications. It is used by developers to create, compile, and debug Java applications.
+     (JDK = JRE + Development Tools
+     JRE = JVM + Libraries
+     JVM = Runs Java bytecode)
+
+20.Explain the components of compile time environments and run time environments.
+
+ *Compile-Time Environment:
+    The compile-time environment is where the Java source code is converted into bytecode (.class files). This    phase involves tools and processes that prepare the code for execution.
+    *Components of Compile-Time Environment:
+       Java Source Code (.java files)
+       Java Compiler (javac)
+       JDK (Java Development Kit)
+       Libraries (API)
+    *Run-Time Environment:
+    The run-time environment is where the compiled bytecode is executed. This phase involves components that manage memory, optimize performance, and ensure the program runs correctly.
+    *Components of Run-Time Environment:
+      JVM (Java Virtual Machine)
+      JRE (Java Runtime Environment)
+        Includes:
+          JVM: To execute bytecode.
+          Libraries: Core Java libraries (e.g., java.lang, java.util) required for running programs.
+          Bytecode (.class files)
+          Class Loader
+21.what is JIT?
+
+ JIT stands for Just-In-Time compilation, which is a key feature of the Java Virtual Machine (JVM) that improves the performance of Java applications.JIT compilation is a crucial aspect of the Java runtime environment that enhances the performance of Java applications by compiling bytecode into native machine code at runtime, allowing for faster execution and dynamic optimizations.
+
+22.different types of memory in jvm.
+
+The JVM manages memory through several distinct areas, each with its own purpose and characteristics:
+   Heap Memory: For dynamic memory allocation of objects and arrays, managed by garbage collection.
+   Stack Memory: For method execution, local variables, and method call information, specific to each thread.
+   Method Area: For class-level data and metadata.
+   Program Counter Register: For tracking the execution point of each thread.
+   Native Method Stack: For managing native method calls.
+
+23.In which area .class is stored?
+
+ The .class files are stored in the Method Area of the JVM, where the JVM keeps the necessary information to execute the bytecode contained in those files. This area is crucial for the runtime behavior of Java applications, as it holds the definitions and metadata for all loaded classes.
+
+
+24.In which area object are stored?
+
+ objects in Java are stored in the Heap Memory. This area is specifically designed for dynamic memory allocation, allowing the JVM to manage the lifecycle of objects efficiently through garbage collection.
+
+25.Why do we call as java simple?
+
+Java is considered simple due to its clear syntax, object-oriented design, automatic memory management, rich standard library, platform independence, strong typing, robust error handling, built-in multithreading support, and the availability of extensive resources. These features collectively contribute to a more straightforward and less error-prone programming experience, making Java accessible to both beginners and experienced developers.
